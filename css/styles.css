@@ -768,13 +768,43 @@ margin-bottom: 20px;
     margin-bottom: 30px;
 }
 
+.madal-field {
+    margin-bottom: 10px;
+}
+
+.madal-field:last-child {
+    margin-bottom: 20px;
+}
+
+
 .modal-input {
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 28px;
     padding-left: 42px;
+    outline: none;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal-input:focus {
+    border: 1px solid #2196F3;
+}
+
+.modal-input:focus + .input-icon {
+    fill: #2196F3;
+}
+
+.modal-input-wrap {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .modal-label {
@@ -788,7 +818,59 @@ margin-bottom: 20px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: 16px;
+    margin-bottom: 25px;
     resize: none;
+}
+
+.check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+
+.check-text::before {
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121 ;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.input-check:checked + .check-text::before {
+    background-color: #2196F3;
+    border: none;
+    background-image: url(../images/icon-checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.policy-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.madal-submit {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    cursor: pointer;
+    border: none;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
 }

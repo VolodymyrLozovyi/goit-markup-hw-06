@@ -472,7 +472,8 @@ margin-bottom: 50px;
 .footer {
     background-color: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
+    position: relative;
 }
 
 .footer>.container {
@@ -582,6 +583,73 @@ margin-bottom: 20px;
 
 .footer-soc-link:focus {
     background: #2196F3;
+}
+
+.footer-input {
+    position: relative;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+    background: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.footer-input:focus {
+    border: 1px solid #2196F3;
+}
+
+.footer-connection{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-label{
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: #757575;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.footer-label:focus {
+    border: 1px solid #2196F3;
+}
+
+.footer-submit-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.icon-send {
+    position: absolute;
+    right: 28px;
+}
+
+.footer-submit {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88px;
+    padding-left: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
 }
 
 /* --------------------PORTFOLIO-PAGE---------------------- */
@@ -706,6 +774,8 @@ margin-bottom: 20px;
     color: #757575;
 }
 
+/* --------------------modal---------------------- */
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -776,7 +846,6 @@ margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
-
 .modal-input {
     width: 448px;
     height: 40px;
@@ -815,12 +884,21 @@ margin-bottom: 20px;
 }
 .modal-text {
     width: 100%;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid rgba(117, 117, 117, 0.5);
     border-radius: 4px;
     padding: 16px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     resize: none;
+    outline: none;
+}
+
+.modal-text:focus {
+    border: 1px solid #2196F3;
 }
 
 .check-text {
@@ -857,7 +935,7 @@ margin-bottom: 20px;
 }
 
 .madal-submit {
-    position: absolute;
+    position: relative;
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -872,5 +950,8 @@ margin-bottom: 20px;
     transform: translate(-50%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
 
+.madal-button {
+    margin-top: 30px;
 }

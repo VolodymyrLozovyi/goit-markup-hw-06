@@ -927,6 +927,7 @@ margin-bottom: 20px;
     border: 2px solid #212121;
     margin-right: 8px;
     border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .input-check:checked + .check-text::before {
@@ -935,9 +936,11 @@ margin-bottom: 20px;
     background-image: url(../images/icon-checked.svg);
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
-.input-check:focus + .check-text::before {
+.input-check:focus + .check-text::before,
+.input-check:hover + .check-text::before {
     border-color: #2196F3;
 }
 

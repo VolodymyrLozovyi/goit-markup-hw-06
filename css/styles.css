@@ -910,23 +910,24 @@ margin-bottom: 20px;
 }
 
 .check-text {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .check-text::before {
     content: '';
     width: 16px;
     height: 15px;
-    border: 2px solid #212121 ;
+    border: 2px solid #212121;
+    margin-right: 8px;
     border-radius: 2px;
-    margin-right: 7px;
 }
-
 
 .input-check:checked + .check-text::before {
     background-color: #2196F3;
@@ -936,15 +937,18 @@ margin-bottom: 20px;
     background-position: center;
 }
 
-.input-check:hover + .check-text {
+.input-check:focus + .check-text::before {
     border-color: #2196F3;
 }
 
-.policy-link {
+.policy {
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-decoration-line: underline;
     color: #2196F3;
+    padding-left: 4px;
 }
 
 .madal-submit {
